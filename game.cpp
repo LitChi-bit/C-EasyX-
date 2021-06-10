@@ -2,8 +2,8 @@
 project：  双人飞机对战小游戏
 anthor：   20 计科 李智凯 
 操作    移动    逆、顺时针旋转   发射子弹 
-玩家A   adws 	 q    e 	       空格 
-玩家B   4268     7    9 	        0        
+玩家A   adws     q    e 	       空格 
+玩家B   4568     7    9 	        0        
 --------------------------------*/ 
 #include <stdio.h>
 #include <stdlib.h>
@@ -216,7 +216,7 @@ void updateWithInput()  // 与玩家输入相关的更新
 			canvas[p_x][p_y] = 2;
 			canvas[p_x + next[turn_b][0]][p_y + next[turn_b][1]] = 5;
 		}
-		else if (input == '2' && p_x < High - 2)
+		else if (input == '5' && p_x < High - 2)
 		{
 			canvas[p_x + next[turn_b][0]][p_y + next[turn_b][1]] = 0;
 			canvas[p_x][p_y] = 0;
