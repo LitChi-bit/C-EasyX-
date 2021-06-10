@@ -14,7 +14,7 @@ anthor：   20 计科 李智凯
 // 全局变量
 int position_x,position_y,p_x,p_y,turn_a,turn_b,num_a,num_b,num_max,life_a = 10,life_b = 10; // 飞机位置
 int canvas[High][Width] = {0};                                                       // 二维数组存储游戏画布中对应的元素
-        // 0为空格，1为飞机*，2为子弹|，3为敌机@
+        // 0为空格，1为飞机A，2为子弹|，3为敌机B
 int next[8][2] = {{0,1},{1,1},{1,0},{1,-1},{0,-1},{-1,-1},{-1,0},{-1,1}};            //从右  右下  下  左下 
 int bullet_a[21][4];
 int bullet_b[21][4];           //a b玩家子弹20发；            
